@@ -10,114 +10,113 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
   <!--  -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
   <!-- Navbar Section Start  -->
-  <header class="md:max-h-fit md:w-full sm:w-auto bg-[url(../asset/hero-section.jpg)] bg-no-repeat bg-cover bg-center md:pt-5">
-    <!-- Navigation Bar Start -->
+    <header
+      class="md:max-h-fit md:w-full sm:w-auto bg-[url(../asset/hero-section.jpg)] bg-no-repeat bg-cover bg-center md:pt-5">
+      <!-- Navigation Bar Start -->
 
-<nav class="flex justify-between items-center md:w-[90%] mx-auto bg-white px-2 py-3 md:rounded-full">
-  <div>
-    <img class="w-16" src="../asset/logo.png" alt="Logo">
-  </div>
-  <div class="nav-links duration-500 md:static bg-white absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
-    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a href="#">About</a>
-      </li>
-    </ul>
-  </div>
-  <div class="flex items-center gap-6">
-    <button class="bg-[#0B5D1E] text-white px-5 py-2 rounded-full">Get More</button>
-    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
-  </div>
-</nav>
-
-
-    <!-- Hero Section End -->
-    <section class="px-20 pt-32 pb-24 md:max-h-fit">
-      <div class="grid lg:grid-cols-2 items-center justify-items-center gap-5">
-        <div class="order-2 lg:order-2 shadow-2xl">
-          <img class="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px]" src="../asset/hero-section/hero.png" alt="" />
+      <nav class="flex justify-between items-center md:w-[90%] mx-auto bg-white px-2 py-3 md:rounded-full">
+        <div>
+          <img class="w-16" src="../asset/logo.png" alt="Logo">
         </div>
-        <div class="order-1 lg:order-1 ml-8 flex flex-col justify-center lg:items-start text-center sm:text-left">
-          <p class="text-4xl font-bold md:text-7xl text-white">
-            Reliable HVAC for <br />
-            Every Season
-          </p>
-          <!-- Start -->
-          <!-- Hightlights Div Start -->
-          <div class="hero-highlights md:mt-3 sm:max-w-auto">
-            <div class="highlights flex items-center justify-center mb-2 mt-4">
-              <img class="mr-2 md:h-[25px]" src="../asset/hero-section/icons/checkmark-badge.png" alt="Icon-01" />
-              <p class="text-white">Certified & Experienced Technicians</p>
-            </div>
-            <div class="highlights flex mb-2">
-              <img class="mr-2" src="../asset/hero-section/icons/alarm-clock.png" alt="Icon-01" />
-              <p class="text-white">Fast, Reliable Service</p>
-            </div>
-            <div class="highlights flex">
-              <img class="mr-2" src="../asset/hero-section/icons/hot-price.png" alt="Icon-01" />
-              <p class="text-white">Transparent, Affordable Pricing</p>
-            </div>
-          </div>
-          <!-- Hightlights Div End -->
-          <!-- Input Div Start -->
-          <div class="input-div bg-white rounded-xl mt-5">
-            <div class="grid gap-6 md:grid-cols-2 p-3">
-              <div>
-                <input type="text" id="first_name"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="John" required />
-              </div>
-              <div>
-                <input type="text" id="last_name"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Doe" required />
-              </div>
-              <div>
-                <input type="text" id="company"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Flowbite" required />
-              </div>
-              <div>
-                <button type="submit"
-                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                  Submit
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- Input Div End -->
-          <!-- Certified Installer Start -->
-          <div>
-            <h1 class="text-white mt-5 text-xl">Certified Installer</h1>
-            <div class="certified-icons-div flex gap-3 mt-4">
-              <img src="../asset/hero-section/certified/icon-01.png" alt="Icon 01" />
-              <img src="../asset/hero-section/certified/icon-02.png" alt="Icon 02" />
-              <img src="../asset/hero-section/certified/icon-03.png" alt="Icon 03" />
-            </div>
-          </div>
-          <!-- Certified Installer End -->
+        <div
+          class="nav-links duration-500 md:static bg-white absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+          <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Past Work</a>
+            </li>
+            <li>
+              <a href="#">Reviews</a>
+            </li>
+          </ul>
         </div>
-      </div>
-      </div>
-    </section>
-  </header>
+        <div class="flex items-center gap-6">
+          <button class="bg-[#0B5D1E] text-white px-5 py-2 rounded-full">Get Free Quote</button>
+          <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+        </div>
+      </nav>
+
+
+      <!-- Hero Section End -->
+      <section class="px-20 pt-32 pb-24 md:max-h-fit">
+        <div class="grid lg:grid-cols-2 items-center justify-items-center gap-5">
+          <div class="order-2 lg:order-2 shadow-2xl">
+            <img class="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px]" src="../asset/hero-section/hero.png" alt="" />
+          </div>
+          <div class="order-1 lg:order-1 ml-8 flex flex-col justify-center lg:items-start text-center sm:text-left">
+            <p class="text-4xl font-bold md:text-7xl text-white">
+              Reliable HVAC for <br />
+              Every Season
+            </p>
+            <!-- Start -->
+            <!-- Hightlights Div Start -->
+            <div class="hero-highlights md:mt-3 sm:max-w-auto">
+              <div class="highlights flex items-center justify-center mb-2 mt-4">
+                <img class="mr-2 md:h-[25px]" src="../asset/hero-section/icons/checkmark-badge.png" alt="Icon-01" />
+                <p class="text-white">Certified & Experienced Technicians</p>
+              </div>
+              <div class="highlights flex mb-2">
+                <img class="mr-2" src="../asset/hero-section/icons/alarm-clock.png" alt="Icon-01" />
+                <p class="text-white">Fast, Reliable Service</p>
+              </div>
+              <div class="highlights flex">
+                <img class="mr-2" src="../asset/hero-section/icons/hot-price.png" alt="Icon-01" />
+                <p class="text-white">Transparent, Affordable Pricing</p>
+              </div>
+            </div>
+            <!-- Hightlights Div End -->
+            <!-- Input Div Start -->
+            <div class="input-div bg-white rounded-xl mt-5">
+              <div class="grid gap-6 md:grid-cols-2 p-3">
+                <div>
+                  <input type="text" id="first_name"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="John" required />
+                </div>
+                <div>
+                  <input type="text" id="last_name"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Doe" required />
+                </div>
+                <div>
+                  <input type="text" id="company"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Flowbite" required />
+                </div>
+                <div>
+                  <button type="submit"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Input Div End -->
+            <!-- Certified Installer Start -->
+            <div>
+              <h1 class="text-white mt-5 text-xl">Certified Installer</h1>
+              <div class="certified-icons-div flex gap-3 mt-4">
+                <img src="../asset/hero-section/certified/icon-01.png" alt="Icon 01" />
+                <img src="../asset/hero-section/certified/icon-02.png" alt="Icon 02" />
+                <img src="../asset/hero-section/certified/icon-03.png" alt="Icon 03" />
+              </div>
+            </div>
+            <!-- Certified Installer End -->
+          </div>
+        </div>
+        </div>
+      </section>
+    </header>
   <!-- Navbar Section End  -->
   <!-- Customer Review Section Start -->
   <div class="md:w-4/6 md:mx-auto sm:mt-20">
@@ -192,7 +191,8 @@
 
 
           <p>
-            “Great experience from start to finish. Honest pricing and top-notch service!, and also I am experience the sprit.”
+            “Great experience from start to finish. Honest pricing and top-notch service!, and also I am experience the
+            sprit.”
           </p>
 
         </div>
@@ -201,145 +201,356 @@
         <p class="text-center">Reviewed on Google</p>
 
       </div>
-    </div>    
+    </div>
     <a href="#" class="w-[8rem] px-3 text-white py-3 rounded-lg mx-auto flex justify-center bg-[#0B5D1E]">View more</a>
   </div>
   <!-- Customer Review Section End -->
-   <!-- Expert HVAC Start -->
-    <div class="w-4/6 mx-auto">
+  <!-- Expert HVAC Start -->
+  <div class="w-4/6 mx-auto">
     <p class="md:text-center md:text-4xl">Your Trusted HVAC Experts</p>
     <div class="py-12">
       <!-- Div 1 -->
-       <div class="md:flex md:justify-center">
-        <div
-        class="mx-auto flex flex-col gap-2 px-4 py-8 rounded-xl bg-white dark:bg-gray-900">
-        <div class="w-full flex justify-center items-center">
-          <img
-            class="rounded-full"
-            src="../asset/experts/icon-1.png" />
+      <div class="md:flex md:justify-center">
+        <div class="mx-auto flex flex-col gap-2 px-4 py-8 rounded-xl bg-white dark:bg-gray-900">
+          <div class="w-full flex justify-center items-center">
+            <img class="rounded-full" src="../asset/experts/icon-1.png" />
+          </div>
+        </div>
+        <div class=" mx-auto flex flex-col gap-2 px-4 py-8 rounded-xl bg-white dark:bg-gray-900">
+          <div class="w-full flex justify-center items-center">
+            <img class="rounded-full" src="../asset/experts/icon-2.png" />
+          </div>
         </div>
       </div>
-      <div
-        class=" mx-auto flex flex-col gap-2 px-4 py-8 rounded-xl bg-white dark:bg-gray-900">
-        <div class="w-full flex justify-center items-center">
-          <img
-            class="rounded-full"
-            src="../asset/experts/icon-2.png" />
-        </div>
-      </div>
-       </div>
       <!-- Div 1 -->
       <div class="md:flex md:justify-center">
-        <div
-        class="mx-auto flex flex-col gap-2 px-4 py-8 rounded-xl bg-white dark:bg-gray-900">
-        <div class="w-full flex justify-center items-center">
-          <img
-            class="rounded-full"
-            src="../asset/experts/icon-3.png" />
+        <div class="mx-auto flex flex-col gap-2 px-4 py-8 rounded-xl bg-white dark:bg-gray-900">
+          <div class="w-full flex justify-center items-center">
+            <img class="rounded-full" src="../asset/experts/icon-3.png" />
+          </div>
+        </div>
+        <div class="mx-auto flex flex-col gap-2 px-4 py-8 rounded-xl bg-white dark:bg-gray-900">
+          <div class="w-full flex justify-center items-center">
+            <img class="rounded-full" src="../asset/experts/icon-4.png" />
+          </div>
+        </div>
+        <div class="mx-auto flex flex-col gap-2 px-4 py-8 rounded-xl bg-white dark:bg-gray-900">
+          <div class="w-full flex justify-center items-center">
+            <img class="rounded-full" src="../asset/experts/icon-5.png" />
+          </div>
         </div>
       </div>
-      <div
-        class="mx-auto flex flex-col gap-2 px-4 py-8 rounded-xl bg-white dark:bg-gray-900">
-        <div class="w-full flex justify-center items-center">
-          <img
-            class="rounded-full"
-            src="../asset/experts/icon-4.png" />
-        </div>
-      </div>
-      <div
-        class="mx-auto flex flex-col gap-2 px-4 py-8 rounded-xl bg-white dark:bg-gray-900">
-        <div class="w-full flex justify-center items-center">
-          <img
-            class="rounded-full"
-            src="../asset/experts/icon-5.png" />
-        </div>
-      </div>
-      </div>
-    
-    </div>    
+
+    </div>
   </div>
-<!-- Expert HVAC End -->
+  <!-- Expert HVAC End -->
   <!-- Customer Review Section Start -->
   <div class="bg-[#EBFFF1] md:py-1">
     <div class="md:w-4/6 md:mx-auto md:mt-8">
-    <p class="text-center md:text-4xl">Trusted by Families Like Yours</p>
-    <div class="md:py-12 md:flex md:justify-center md:items-center">
-      <div
-        class=" w-[20rem] mx-auto flex flex-col gap-2 px-4 py-8 border border-gray-300 border-gray-300 rounded-xl bg-white dark:bg-gray-900">
-        <div class="w-full flex justify-center items-center">
-          <img
-            class="w-[4rem] h-[4rem] rounded-full "
-            src="../asset/benifits/clock-03.png"
-            alt="Profile Image" />
+      <p class="text-center md:text-4xl">Trusted by Families Like Yours</p>
+      <div class="md:py-12 md:flex md:justify-center md:items-center">
+        <div
+          class=" w-[20rem] mx-auto flex flex-col gap-2 px-4 py-8 border border-gray-300 border-gray-300 rounded-xl bg-white dark:bg-gray-900">
+          <div class="w-full flex justify-center items-center">
+            <img class="w-[4rem] h-[4rem] rounded-full " src="../asset/benifits/clock-03.png" alt="Profile Image" />
+          </div>
+
+          <div class="w-full h-full text-center flex flex-col gap-4 -top-10">
+            <h1 class="uppercase text-lg font-semibold dark:text-white">
+              24/7 Emergency Services
+            </h1>
+            <p>
+              Fast and reliable emergency HVAC services available 24/7.
+            </p>
+
+          </div>
+
         </div>
+        <div
+          class=" w-[20rem] mx-auto flex flex-col gap-2 px-4 py-8 border border-gray-300 border-gray-300 rounded-xl bg-white dark:bg-gray-900">
+          <div class="w-full flex justify-center items-center">
+            <img class="w-[4rem] h-[4rem] rounded-full " src="../asset/benifits/labor.png" alt="Profile Image" />
+          </div>
 
-        <div class="w-full h-full text-center flex flex-col gap-4 -top-10">
-          <h1 class="uppercase text-lg font-semibold dark:text-white">
-            24/7 Emergency Services
-          </h1>
-          <p>
-            Fast and reliable emergency HVAC services available 24/7.
-          </p>
+          <div class="w-full h-full text-center flex flex-col gap-4 -top-10">
+            <h1 class="uppercase text-lg font-semibold dark:text-white">
+              Experienced Professionals
+            </h1>
+
+
+            <p>
+              Highly trained and certified HVAC experts with years of industry experience.
+            </p>
+
+          </div>
+
 
         </div>
+        <div
+          class=" w-[20rem] mx-auto flex flex-col gap-2 px-4 py-8 border border-gray-300 border-gray-300 rounded-xl bg-white dark:bg-gray-900">
+          <div class="w-full flex justify-center items-center">
+            <img class="w-[4rem] h-[4rem] rounded-full " src="../asset/benifits/dollar-circle.png"
+              alt="Profile Image" />
+          </div>
 
+          <div class="w-full h-full text-center flex flex-col gap-4 -top-10">
+            <h1 class="uppercase text-lg font-semibold dark:text-white">
+              Affordable Pricing
+            </h1>
+            <p>
+              Transparent and competitive pricing with no hidden fees.
+            </p>
+
+          </div>
+
+        </div>
       </div>
-      <div
-        class=" w-[20rem] mx-auto flex flex-col gap-2 px-4 py-8 border border-gray-300 border-gray-300 rounded-xl bg-white dark:bg-gray-900">
-        <div class="w-full flex justify-center items-center">
-          <img
-            class="w-[4rem] h-[4rem] rounded-full "
-            src="../asset/benifits/labor.png"
-            alt="Profile Image" />
-        </div>
-
-        <div class="w-full h-full text-center flex flex-col gap-4 -top-10">
-          <h1 class="uppercase text-lg font-semibold dark:text-white">
-            Experienced Professionals
-          </h1>
-
-
-          <p>
-            Highly trained and certified HVAC experts with years of industry experience.
-          </p>
-
-        </div>
-      
-
-      </div>
-      <div
-        class=" w-[20rem] mx-auto flex flex-col gap-2 px-4 py-8 border border-gray-300 border-gray-300 rounded-xl bg-white dark:bg-gray-900">
-        <div class="w-full flex justify-center items-center">
-          <img
-            class="w-[4rem] h-[4rem] rounded-full "
-            src="../asset/benifits/dollar-circle.png"
-            alt="Profile Image" />
-        </div>
-
-        <div class="w-full h-full text-center flex flex-col gap-4 -top-10">
-          <h1 class="uppercase text-lg font-semibold dark:text-white">
-            Affordable Pricing
-          </h1>
-          <p>
-            Transparent and competitive pricing with no hidden fees.
-          </p>
-
-        </div>
-        
-      </div>
-    </div>    
-  </div>
+    </div>
   </div>
   <!-- Customer Review Section End -->
-  <!-- Script Start -->
-   <script>
+  <!-- Services Start -->
+  <section>
+    <h1 class="text-center md:text-4xl md:pt-12">Our HVAC Services</h1>
+
+    <div class="md:flex md:items-center md:w-5/6 md:mx-auto md:gap-8">
+      <div class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96">
+        <div class="relative p-2.5 h-96 overflow-hidden rounded-xl bg-clip-border">
+          <img
+            src="../asset/services/card-img-1.jpg"
+            alt="card-image" class="h-full w-full object-cover rounded-md" />
+        </div>
+        <div class="p-4">
+          <div class="mb-2 flex items-center justify-between">
+            <p class="text-slate-800 text-xl font-semibold">
+              Apple AirPods
+            </p>
+            <p class="text-cyan-600 text-xl font-semibold">
+              $95.00
+            </p>
+          </div>
+          <p class="text-slate-600 leading-normal font-light">
+            With plenty of talk and listen time, voice-activated Siri access, and
+            an available wireless charging case.
+          </p>
+          <button
+            class="rounded-md w-full mt-6 bg-cyan-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-cyan-700 focus:shadow-none active:bg-cyan-700 hover:bg-cyan-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            type="button">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+      <!-- Card 2 -->
+       <div class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96">
+        <div class="relative p-2.5 h-96 overflow-hidden rounded-xl bg-clip-border">
+          <img
+            src="../asset/services/card-img-2.jpg"
+            alt="card-image" class="h-full w-full object-cover rounded-md" />
+        </div>
+        <div class="p-4">
+          <div class="mb-2 flex items-center justify-between">
+            <p class="text-slate-800 text-xl font-semibold">
+              Apple AirPods
+            </p>
+            <p class="text-cyan-600 text-xl font-semibold">
+              $95.00
+            </p>
+          </div>
+          <p class="text-slate-600 leading-normal font-light">
+            With plenty of talk and listen time, voice-activated Siri access, and
+            an available wireless charging case.
+          </p>
+          <button
+            class="rounded-md w-full mt-6 bg-cyan-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-cyan-700 focus:shadow-none active:bg-cyan-700 hover:bg-cyan-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            type="button">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+      <!-- card 3 -->
+       <div class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96">
+        <div class="relative p-2.5 h-96 overflow-hidden rounded-xl bg-clip-border">
+          <img
+            src="../asset/services/card-img-3.jpg"
+            alt="card-image" class="h-full w-auto object-cover rounded-md" />
+        </div>
+        <div class="p-4">
+          <div class="mb-2 flex items-center justify-between">
+            <p class="text-slate-800 text-xl font-semibold">
+              Apple AirPods
+            </p>
+            <p class="text-cyan-600 text-xl font-semibold">
+              $95.00
+            </p>
+          </div>
+          <p class="text-slate-600 leading-normal font-light">
+            With plenty of talk and listen time, voice-activated Siri access, and
+            an available wireless charging case.
+          </p>
+          <button
+            class="rounded-md w-full mt-6 bg-cyan-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-cyan-700 focus:shadow-none active:bg-cyan-700 hover:bg-cyan-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            type="button">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services End -->
+   <!-- Insight Start -->
+  <section>
+    <h1 class="text-center md:text-4xl md:pt-12">HVAC Insights</h1>
+
+    <div class="md:flex md:items-center md:w-5/6 md:mx-auto md:gap-8">
+      <div class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96">
+        <div class="relative p-2.5 h-96 overflow-hidden rounded-xl bg-clip-border">
+          <img
+            src="../asset/services/card-img-1.jpg"
+            alt="card-image" class="h-full w-full object-cover rounded-md" />
+        </div>
+        <div class="p-4">
+          <p class=" text-sm font-normal">
+              25 Apr 2025
+            </p>
+          <p class="text-slate-800 text-lg font-semibold">
+              5 Signs Your AC Needs <br> Maintenance
+            </p>
+            <hr>
+          <p class="text-slate-600 leading-normal font-light">
+            Read More
+          </p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96">
+        <div class="relative p-2.5 h-96 overflow-hidden rounded-xl bg-clip-border">
+          <img
+            src="../asset/services/card-img-1.jpg"
+            alt="card-image" class="h-full w-full object-cover rounded-md" />
+        </div>
+        <div class="p-4">
+          <p class=" text-sm font-normal">
+              25 Apr 2025
+            </p>
+          <p class="text-slate-800 text-lg font-semibold">
+              5 Signs Your AC Needs <br> Maintenance
+            </p>
+            <hr>
+          <p class="text-slate-600 leading-normal font-light">
+            Read More
+          </p>
+        </div>
+      </div>
+      <!-- card 3 -->
+       <div class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96">
+        <div class="relative p-2.5 h-96 overflow-hidden rounded-xl bg-clip-border">
+          <img
+            src="../asset/services/card-img-1.jpg"
+            alt="card-image" class="h-full w-full object-cover rounded-md" />
+        </div>
+        <div class="p-4">
+          <p class=" text-sm font-normal">
+              25 Apr 2025
+            </p>
+          <p class="text-slate-800 text-lg font-semibold">
+              5 Signs Your AC Needs <br> Maintenance
+            </p>
+            <hr>
+          <p class="text-slate-600 leading-normal font-light">
+            Read More
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Insight End -->
+
+<!-- Footer Section Start -->
+ <footer class="footer-area bg-green-900 w-full py-10">
+  <div class="md:w-5/6 md:mx-auto px-4">
+    <div class="your-cta-wrapper mt-6">
+      <div class="bg-white rounded-lg flex flex-col md:flex-row items-center justify-between px-6 py-4 shadow-md">
+        <p class="text-green-800 text-lg text-center md:text-left mb-4 md:mb-0">
+          Let us help you choose the perfect system for your home.
+        </p>
+        <button class="bg-green-800 text-white text-sm px-4 py-2 rounded hover:bg-green-900 transition">
+          Free HVAC Estimate
+        </button>
+      </div>
+    </div>
+ <div class="footer-link-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center mt-9 mb-3 px-4">
+  
+  <!-- Logo + Description + Social -->
+  <div class="link-1 flex flex-col items-center md:items-start text-center md:text-left space-y-4 max-w-sm">
+    <a href="#" class="font-slab text-[28px] sm:text-[34px] font-normal text-white">CoolQuest</a>
+    <p class="text-white text-sm">
+      Trusted local HVAC experts delivering reliable heating and cooling solutions.
+    </p>
+    <div class="social-link flex gap-4">
+      <a href="#"><img src="../asset/footer-icons/Facebook.png" alt="facebook" class="w-6 h-6"></a>
+      <a href="#"><img src="../asset/footer-icons/twitter.png" alt="Twitter" class="w-6 h-6"></a>
+      <a href="#"><img src="../asset/footer-icons/linkedin.png" alt="linkedin" class="w-6 h-6"></a>
+    </div>
+  </div>
+
+  <!-- Quick Links -->
+  <div class="link-2 flex flex-col items-center md:items-start text-center md:text-left space-y-2">
+    <h3 class="text-white font-bold text-lg">Quick Links</h3>
+    <a href="#" class="text-white text-sm hover:underline">Home</a>
+    <a href="#" class="text-white text-sm hover:underline">Services</a>
+    <a href="#" class="text-white text-sm hover:underline">About</a>
+    <a href="#" class="text-white text-sm hover:underline">Contact</a>
+    <a href="#" class="text-white text-sm hover:underline">FAQs</a>
+  </div>
+
+  <!-- Contact Info -->
+  <div class="contact-us w-full max-w-sm">
+    <div class="bg-green-900 text-white p-4 rounded-md space-y-4">
+      <div class="flex items-center space-x-3">
+        <img src="../asset/footer-icons/Vector.png" alt="Phone Icon" class="w-5 h-5">
+        <span class="text-sm">(555) 123-4567</span>
+      </div>
+      <div class="flex items-center space-x-3">
+        <img src="../asset/footer-icons/mail-02.png" alt="Mail Icon" class="w-5 h-5">
+        <span class="text-sm">mail.coolquest.com</span>
+      </div>
+      <div class="flex items-center space-x-3">
+        <img src="../asset/footer-icons/location-06.png" alt="Location Icon" class="w-5 h-5">
+        <span class="text-sm">1234 Maplewood Drive, Houston, TX 77002, United States</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+ <hr>
+ <p class="text-white text-center mt-6">&copy;2025 all rights resereved HAVC Cool Quest Co.</p>
+  </div>
+
+</footer>
+
+<!-- Footer Section End -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- =============================================================
+   Script Start 
+   ==============================================================-->
+  <script>
     const navLinks = document.querySelector('.nav-links');
     function onToggleMenu(e) {
       e.name = e.name === "menu" ? "close" : "menu";
       navLinks.classList.toggle('top-[9.2%]')
-      
+
     }
-   </script>
+  </script>
   <!-- Script End -->
 </body>
 
