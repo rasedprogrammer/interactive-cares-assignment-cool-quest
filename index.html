@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tailwind</title>
-  <link rel="stylesheet" href="./output.css" />
-
+  <title>HVAC CoolQuest Website</title>
+  <!-- Link With Tailwind CSS File -->
+  <link rel="stylesheet" href="./src/output.css" />
   <!-- Remix Icon CDN -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-  <!--  -->
+  <!-- Ionicons CDN -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -20,7 +20,7 @@
     <!-- Navigation Bar Start -->
     <nav class="flex justify-between items-center md:w-[90%] mx-auto bg-white px-8 py-3 md:rounded-full">
       <div>
-        <img class="w-16" src="../asset/logo.png" alt="Logo">
+        <img class="md:w-32 w-20" src="../asset/logo.png" alt="Logo">
       </div>
       <div
         class="nav-links duration-500 md:static bg-white absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
@@ -40,7 +40,7 @@
         </ul>
       </div>
       <div class="flex items-center gap-6">
-        <button class="bg-[#0B5D1E] text-white px-5 py-2 rounded-full">Get Free Quote</button>
+        <button class="bg-[#0B5D1E] text-white text-sm md:text-lg px-5 py-2 rounded-full">Get Free Quote</button>
         <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
       </div>
     </nav>
@@ -48,28 +48,27 @@
     <section class="px-20 pb-24 md:max-h-fit">
       <div class="grid lg:grid-cols-2 items-center justify-items-center gap-5">
         <div class="md:order-2 order-1 lg:order-2 shadow-2xl">
-          <img class="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px]" src="../asset/hero-section/hero.png" alt="" />
+          <img class="md:h-80 w-80 object-cover lg:w-[500px] lg:h-[500px]" src="../asset/hero-section/hero.png" alt="" />
         </div>
         <div
-          class="md:order-1 mt-6 md:mt-12 order-2 lg:order-1 ml-8 flex flex-col justify-center lg:items-start md:text-center sm:text-left">
-          <p class="text-4xl font-bold md:text-7xl text-white">
-            Reliable HVAC for <br />
-            Every Season
+          class="md:order-1 mt-6 md:mt-12 order-2 lg:order-1 ml-8 flex flex-col justify-center lg:items-start sm:text-left">
+          <p class="text-2xl font-bold md:text-7xl text-white">
+            Reliable HVAC for<br />Every Season
           </p>
           <!-- Start -->
           <!-- Hightlights Div Start -->
           <div class="hero-highlights md:mt-3">
-            <div class="highlights flex mb-2 mt-5">
-              <img class="md:mr-2" src="../asset/hero-section/icons/checkmark-badge.png" alt="Icon-01" />
-              <p class="text-white">Certified & Experienced Technicians</p>
+            <div class="highlights flex items-center mb-2 mt-5">
+              <img class="md:mr-2 mr-2" src="../asset/hero-section/icons/checkmark-badge.png" alt="Icon-01" />
+              <p class="text-white text-xs md:text-lg">Certified & Experienced Technicians</p>
             </div>
-            <div class="highlights flex mb-2">
-              <img class="md:mr-2" src="../asset/hero-section/icons/alarm-clock.png" alt="Icon-01" />
-              <p class="text-white">Fast, Reliable Service</p>
+            <div class="highlights flex items-center mb-2">
+              <img class="md:mr-2 mr-2" src="../asset/hero-section/icons/alarm-clock.png" alt="Icon-01" />
+              <p class="text-white text-xs md:text-lg">Fast, Reliable Service</p>
             </div>
-            <div class="highlights flex">
-              <img class="md:mr-2" src="../asset/hero-section/icons/hot-price.png" alt="Icon-01" />
-              <p class="text-white">Transparent, Affordable Pricing</p>
+            <div class="highlights flex items-center">
+              <img class="md:mr-2 mr-2" src="../asset/hero-section/icons/hot-price.png" alt="Icon-01" />
+              <p class="text-white text-xs md:text-lg">Transparent, Affordable Pricing</p>
             </div>
           </div>
           <!-- Hightlights Div End -->
@@ -120,10 +119,10 @@
   <!-- ======================================================= -->
   <!-- Customer Review Section Start -->
   <div id="review" class="md:w-5/6 md:mx-auto md:mt-6 mt-12 sm:mt-20">
-    <p class="text-center text-3xl md:text-4xl md:pt-12 font-medium">Trusted by Families Like Yours</p>
+    <p class="text-center text-2xl md:text-4xl md:pt-12 font-medium">Trusted by Families Like Yours</p>
     <div class="md:py-12 md:flex md:justify-center md:items-center">
       <div
-        class="hover:bg-[#0B5D1E]  hover:text-white mt-12 w-[20rem] mx-auto flex flex-col gap-2 px-4 py-8 border border-gray-300 border-gray-300 rounded-xl bg-white dark:bg-gray-900">
+        class="hover:bg-[#0B5D1E]  hover:text-white mt-12 w-[20rem] mx-auto flex flex-col gap-2 px-4 py-8 border  border-gray-300 rounded-xl bg-white dark:bg-gray-900">
         <div class="w-full flex justify-center items-center">
           <img class="w-[2rem] h-[2rem] rounded-full outline-offset-2 outline-1 outline-blue-400 shadow-lg -top-[4rem]"
             src="https://lh3.googleusercontent.com/a/ACg8ocIexhmmTS8LcwWo1fPGY5Fl3KXpd-JuBE_Gj56P3rUR2g=s96-c"
@@ -206,7 +205,7 @@
   <!-- ======================================================= -->
   <!-- Expert HVAC Start -->
   <div class="md:w-5/6 mx-auto mt-12">
-    <p class="text-center text-3xl md:text-4xl font-medium">Your Trusted HVAC Experts</p>
+    <p class="text-center text-2xl md:text-4xl font-medium">Your Trusted HVAC Experts</p>
     <div class="py-12">
       <!-- Div 1 -->
       <div class="md:flex md:justify-center">
@@ -247,7 +246,7 @@
   <!-- Customer Service Section Start -->
   <div class="bg-[#EBFFF1] md:py-1">
     <div class="md:w-5/6 md:mx-auto md:mt-8">
-      <p class="text-center text-3xl md:text-4xl font-medium">Trusted by Families Like Yours</p>
+      <p class="text-center text-2xl md:text-4xl font-medium">The Benefits of Choosing Us</p>
       <div class="md:py-12 mt-12 md:mt-0 md:flex md:justify-center md:items-center">
         <div
           class=" w-[20rem] mx-auto flex flex-col gap-2 px-4 mb-8 py-8 border border-gray-300 rounded-tr-3xl rounded-bl-3xl bg-white dark:bg-gray-900">
@@ -312,18 +311,18 @@
   <!-- Past Work Section Start -->
   <section id="past-work" class="Portfolio-are md:px-0 px-12 mt-20">
     <div class="md:w-5/6 mx-auto">
-      <div class="flex flex-col justify-center items-center mt-5 space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+      <div class="flex flex-col justify-center  mt-5 space-y-6 md:flex-row md:space-y-0 md:space-x-6">
 
         <!-- Text Section -->
-        <div class="protfolio-item w-full max-w-xl text-center md:text-left">
-          <h3 class="text-3xl font-medium ">Past Work That Speaks for Itself</h3>
-          <p class="text-zinc-500 mt-2">
+        <div class="protfolio-item w-full max-w-xl md:text-left">
+          <h3 class="text-2xl md:text-4xl font-medium ">Past Work That Speaks for Itself</h3>
+          <p class="text-zinc-500 mt-12">
             Explore some of the outstanding HVAC projects we’ve proudly completed. Every image reflects our unwavering
             commitment to quality, reliability, and expert craftsmanship — from flawless installations to seamless
             maintenance. These are just a few examples of the exceptional results we deliver for homeowners like you.
           </p>
           <button
-            class="bg-green-900 text-white text-sm  w-[150px] h-[36px] rounded border-2 border-transparent mt-6 hover:bg-white hover:text-green-900 hover:border-green-900 transition-all duration-300">
+            class="bg-green-900 text-white text-sm  w-[150px] h-[36px] rounded border-2 border-transparent mt-12 hover:bg-white hover:text-green-900 hover:border-green-900 transition-all duration-300">
             Explore Our Work
           </button>
 
@@ -331,8 +330,8 @@
 
         <!-- Portfolio Box -->
         <div class="protfolio-item w-full max-w-xl bg-green-900 rounded-4xl p-4 text-center md:text-left">
-          <h3 class="text-white font-medium text-2xl">Efficient Home Heating Upgrade</h3>
-          <p class="text-white mt-2">
+          <h3 class="text-white font-medium text-xl md:text-2xl">Efficient Home Heating Upgrade</h3>
+          <p class="text-white text-sm md:text-base mt-2">
             Installed a high-efficiency furnace system, reducing energy costs and improving comfort for the homeowners.
           </p>
           <img src="../asset/past-work/port-1.png" alt="portfolio" class="mt-4 rounded mx-auto md:mx-0">
@@ -342,15 +341,15 @@
       <div class="flex flex-col justify-center items-center mt-5 space-y-6 md:flex-row md:space-y-0 md:space-x-6">
         <!-- Portfolio Box -->
         <div class="protfolio-item w-full max-w-xl bg-green-900 rounded-4xl p-4 text-center md:text-left">
-          <h3 class="text-white font-medium text-2xl">Complete HVAC System Installation</h3>
-          <p class="text-white mt-2">
+          <h3 class="text-white font-medium text-xl md:text-2xl">Complete HVAC System Installation</h3>
+          <p class="text-white text-sm md:text-base mt-2">
             Designed and installed a full heating and cooling solution for a newly built modern home.
           </p>
           <img src="../asset/past-work/port-2.png" alt="portfolio" class="mt-4 rounded mx-auto md:mx-0">
         </div>
         <div class="protfolio-item w-full max-w-xl bg-green-900 rounded-4xl p-4 text-center md:text-left">
-          <h3 class="text-white font-medium text-2xl">Emergency AC Repair & Restoration</h3>
-          <p class="text-white mt-2">
+          <h3 class="text-white font-medium text-xl md:text-2xl">Emergency AC Repair & Restoration</h3>
+          <p class="text-white text-sm md:text-base mt-2">
             Rapid response service that restored cooling during peak summer heat, ensuring family comfort and safety.
           </p>
           <img src="../asset/past-work/port-3.png" alt="portfolio" class="mt-4 rounded mx-auto md:mx-0">
@@ -365,7 +364,7 @@
   <section class="Special-Offers-are mt-20">
     <div class="md:w-5/6 mx-auto  px-4 ">
 
-      <h3 class="text-4xl font-medium text-center">Save Big on Your Next HVAC Project</h3>
+      <h3 class="text-2xl md:text-4xl font-medium text-center">Save Big on Your Next HVAC Project</h3>
       <div class="offer-section flex flex-col gap-7 mt-12 md:flex-row md:gap-6 px-4">
 
         <!-- Offer Box with Overlay -->
@@ -374,13 +373,13 @@
             class="w-full h-[400px] g-no-repeat bg-cover bg-center object-cover rounded-4xl">
 
           <!-- Overlay -->
-          <div class="absolute inset-0 bg-green-900 opacity-75 rounded-4xl flex items-end">
-            <div class="text-white px-4 pb-6 w-full">
-              <button
-                class="bg-white text-green-900 text-sm w-[150px] h-[36px] rounded-lg border-2 border-transparent mb-3 hover:bg-white hover:text-green-900 hover:border-green-900 transition-all duration-300">
-                Hot Offer
-              </button>
-              <h2 class="text-2xl font-medium">Get $500 OFF New HVAC System Installation!</h2>
+          <div class="absolute inset-0 bg-green-800/70 flex items-end rounded-[32px] transition-opacity">
+          <div class="text-white px-4 pb-6 w-full">
+            <button
+              class="bg-white text-green-900 text-sm w-[150px] h-[36px] rounded-lg border-2 border-transparent mb-3 hover:border-green-900 transition-all duration-300">
+              Hot Offer
+            </button>
+              <h2 class="text-2xl text-white font-medium">Get $500 OFF New HVAC System Installation!</h2>
               <p class="text-sm mt-1">Upgrade your comfort and save big! Get an instant $500 OFF when you install a
                 brand-new, energy-efficient HVAC system — limited time only!</p>
             </div>
@@ -398,7 +397,7 @@
   <!-- Bring Comfort Section Start -->
   <section id="comfort-home" class=" Process-are">
     <div class="md:w-5/6 mx-auto px-4">
-      <h3 class="text-3xl text-center font-medium mt-12">How We Bring Comfort to Your Home</h3>
+      <h3 class="text-2xl md:text-4xl text-center font-medium mt-12">How We Bring Comfort to Your Home</h3>
 
       <div class="process grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center mt-12">
         <div class="w-[262px] h-[342px]  rounded-[20px] overflow-hidden shadow-md">
@@ -487,7 +486,7 @@
   <!-- Services Start -->
   <section id="services" class="Services">
     <div class="md:w-5/6 mx-auto mt-20">
-      <h3 class="text-3xl text-center font-medium mt-5">Our HVAC Services</h3>
+      <h3 class="text-2xl md:text-4xl text-center font-medium mt-5">Our HVAC Services</h3>
 
       <div
         class="Services md:px-4 px-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-6  gap-9 mt-12 justify-items-center">
@@ -528,7 +527,7 @@
   <!-- Behind The Work Section Start -->
   <section>
     <div class="md:w-5/6 md:mx-auto mt-28">
-      <h2 class="text-3xl font-medium text-center mt-4 md:mt-0 lg:mt-0">
+      <h2 class="text-2xl md:text-4xl px-5 font-medium text-center mt-4 md:mt-0 lg:mt-0">
         Meet the People Behind the Work
       </h2>
 
@@ -557,58 +556,119 @@
   <!-- Behind The Work Section End -->
   <!-- ======================================================= -->
   <!-- Insight Start -->
-  <section>
-    <div class="md:w-5/6 mx-auto px-4 ">
-      <h3 class="text-3xl  font-medium mt-12 text-center">HVAC Insights</h3>
+ <section class="mx-auto m-auto">
+            <div class="">
+                <h3 class="text-2xl md:text-4xl mt-12 font-medium text-center">HVAC Insights</h3>
+            </div>
+            <div class="md:w-5/6 mx-auto p-5 sm:p-10 md:p-16">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                    <!-- card-1 -->
+                    <div class="rounded-t-4xl overflow-hidden shadow-lg flex flex-col">
+                        <div class="relative">
+                            <a href="#">
+                                <img
+                                    class="w-full"
+                                    src="../asset/insights/blog-1.png"
+                                    alt="Sunset in the mountains">
+                                <div
+                                    class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-500 opacity-25"></div>
+                            </a>
+                        </div>
+                        <div class="px-6 py-4 mb-auto">
+                            <p class="text-gray-500 text-sm">
+                                25 Apr 2025
+                            </p>
+                            <a
+                                href="#"
+                                class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out mb-2">5 Signs Your AC Needs Maintenance</a>
+                        </div>
+                        <div
+                            class="px-6 py-3 flex flex-row items-center justify-between border-t-[2px] border-gray-500">
+                            <span
+                                href="#"
+                                class="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <a href="#">
+                                    <span class="ml-1">Read More</span></a>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+                    <div class="rounded-t-4xl overflow-hidden shadow-lg flex flex-col">
+                        <div class="relative">
+                            <a href="#">
+                                <img
+                                    class="w-full"
+                                    src="../asset/insights/blog-2.png"
+                                    alt="Sunset in the mountains">
+                                <div
+                                    class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-500 opacity-25"></div>
+                            </a>
+                        </div>
+                        <div class="px-6 py-4 mb-auto">
+                            <p class="text-gray-500 text-sm">
+                                22 Apr 2025
+                            </p>
+                            <a
+                                href="#"
+                                class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out mb-2">How to Save on Heating Bills This Winter</a>
+                        </div>
+                        <div
+                            class="px-6 py-3 flex flex-row items-center justify-between border-t-[2px] border-gray-500">
+                            <span
+                                href="#"
+                                class="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <a href="#">
+                                    <span class="ml-1">Read More</span></a>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="rounded-t-4xl overflow-hidden shadow-lg flex flex-col">
+                        <div class="relative">
+                            <a href="#">
+                                <img
+                                    class="w-full"
+                                    src="../asset/insights/blog-3.png"
+                                    alt="Sunset in the mountains">
+                                <div
+                                    class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-500 opacity-25"></div>
+                            </a>
+                        </div>
+                        <div class="px-6 py-4 mb-auto">
+                            <p class="text-gray-500 text-sm">
+                                22 Apr 2025
+                            </p>
+                            <a
+                                href="#"
+                                class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out mb-2">The Best Thermostat Settings for Comfort & Efficiency</a>
+                        </div>
+                        <div
+                            class="px-6 py-3 flex flex-row items-center justify-between border-t-[2px] border-gray-500">
+                            <span
+                                href="#"
+                                class="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <a href="#">
+                                    <span class="ml-1">Read More</span></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="blog grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10 mt-12 justify-items-center">
-        <div class="blog-item w-full max-w-xs h-auto bg-white rounded shadow-md">
-          <img src="../asset/insights/blog-1.png" alt="blog-images">
-          <p class="date p-2 text-gray-500">25 Apr 2025</p>
-          <h5 class="blog-tittle p-2 text-2xl font-medium">
-            5 Signs Your AC Needs Maintenance
-          </h5>
-          <div class="read-more w-full max-w-xs h-[30px] border-t-2 border-gray-600">
-            <a href="#" class="ms-2 text-xl font-light">Read More</a>
-          </div>
-        </div>
-        <div class="blog-item w-full max-w-xs h-auto bg-white rounded shadow-md">
-          <img src="../asset/insights/blog-2.png" alt="blog-images">
-          <p class="date p-2 text-gray-500">25 Apr 2025</p>
-          <h5 class="blog-tittle p-2 text-2xl font-medium ">
-            How to Save on Heating Bills This Winter
-          </h5>
-          <div class="read-more w-full max-w-xs h-[30px] border-t-2 border-gray-600">
-            <a href="#" class="ms-2 text-xl font-light">Read More</a>
-          </div>
-        </div>
-        <div class="blog-item w-full max-w-xs h-auto bg-white rounded shadow-md">
-          <img src="../asset/insights/blog-3.png" alt="blog-images">
-          <p class="date p-2 text-gray-500">25 Apr 2025</p>
-          <h5 class="blog-tittle  p-2 text-2xl font-medium">
-            The Best Thermostat Settings for Comfort & Efficiency
-          </h5>
-          <div class="read-more w-full max-w-xs h-[30px] border-t-2 border-gray-600">
-            <a href="#" class="ms-2 text-xl font-light">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-center mt-10">
-        <button
-          class="bg-green-900 text-white text-sm  w-[160px] h-[36px] rounded border-2 border-transparent hover:bg-white hover:text-green-900 hover:border-green-900 transition-all duration-300">
-          Explore All Articles
-        </button>
-      </div>
-
-    </div>
-
-  </section>
+                <!-- Centered button below the grid -->
+                <div class="text-center mt-10">
+                    <button
+                        class="border-[1px] rounded-lg px-6 py-3 text-white bg-green-900 hover:bg-green-800 transition duration-300">
+                        <span>Explore All Articles</span>
+                    </button>
+                </div>
+            </div>
+        </section>
   <!-- Insight End -->
   <!-- ======================================================= -->
   <!-- Areas We Serve Section Start -->
   <section>
     <div class="md:w-5/6 md:mx-auto px-4">
-      <h3 class="text-3xl font-medium text-center mt-12">Areas We Serve</h3>
+      <h3 class="text-2xl md:text-4xl font-medium text-center mt-12">Areas We Serve</h3>
 
       <div class="location grid grid-cols-2 gap-4 md:grid-cols-6  lg:grid-cols-6 mt-12 mb-9 justify-items-center">
         <div class="area w-[167px]  h-[39px] border-2  border-green-900 rounded-full flex gap-5 pt-1 ps-2 ">
@@ -690,7 +750,6 @@
   </section>
   <!-- Areas We Serve Section End -->
   <!-- ======================================================= -->
-
   <!-- ======================================================= -->
   <!-- Footer Section Start -->
   <footer class="footer-area bg-green-900 w-full py-10">
@@ -707,7 +766,6 @@
       </div>
       <div
         class="footer-link-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center mt-9 mb-3 px-4">
-
         <!-- Logo + Description + Social -->
         <div class="link-1 flex flex-col items-center md:items-start text-center md:text-left space-y-4 max-w-sm">
           <a href="#" class="font-slab text-[28px] sm:text-[34px] font-normal text-white">CoolQuest</a>
@@ -720,7 +778,6 @@
             <a href="#"><img src="../asset/footer-icons/linkedin.png" alt="linkedin" class="w-6 h-6"></a>
           </div>
         </div>
-
         <!-- Quick Links -->
         <div class="link-2 flex flex-col items-center md:items-start text-center md:text-left space-y-2">
           <h3 class="text-white font-bold text-lg">Quick Links</h3>
@@ -730,7 +787,6 @@
           <a href="#" class="text-white text-sm hover:underline">Contact</a>
           <a href="#" class="text-white text-sm hover:underline">FAQs</a>
         </div>
-
         <!-- Contact Info -->
         <div class="contact-us w-full max-w-sm">
           <div class="bg-green-900 text-white p-4 rounded-md space-y-4">
@@ -748,15 +804,11 @@
             </div>
           </div>
         </div>
-
       </div>
-
       <hr>
       <p class="text-white text-center mt-6">&copy;2025 all rights resereved HAVC Cool Quest Co.</p>
     </div>
-
   </footer>
-
   <!-- Footer Section End -->
   <!-- ======================================================= -->
 
